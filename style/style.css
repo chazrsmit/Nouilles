@@ -233,7 +233,7 @@ header {
     padding-top:120px;
     /* border:pink 2px solid; */
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 120px;
 }
 
 .service-boxes {
@@ -250,6 +250,7 @@ header {
     justify-content: center;
     align-items: center;
     border:rgb(221, 221, 221) solid 1px;
+    border-radius: 3px;
     width:270px;
     height:255px;
 }
@@ -267,5 +268,24 @@ header {
     padding-top:20px;
 }
 
-/*  */
+/* Porfolio */
+
+.section-portfolio {
+    text-align: center;
+    padding-top:30px;
+    padding-bottom: 120px;
+
+}
+
+.portfolio-rangee {
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    padding-top: 60px;
+}
+
+.portfolio-rangee img {
+    width:25vw;
+    height:25vw;
+}
 
