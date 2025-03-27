@@ -337,3 +337,10 @@ header {
     margin:0;
     letter-spacing: 0.8px;
 }
+
+.pricing-croix p {
+    color:#d6819c;
+    font-weight: 100;
+    font-size: 13px;
+    line-height: 2.9;
+}
