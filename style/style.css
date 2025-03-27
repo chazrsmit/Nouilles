@@ -4,6 +4,8 @@ body {
     margin:0;
 }
 
+/* Nav */
+
 .nav-head {
     background-image: url('../images/header.jpg');
     background-size: cover;
@@ -25,7 +27,9 @@ body {
 }
 
 nav {
-    position: relative;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
     z-index: 3;
     display: flex;
     justify-content: space-evenly;
@@ -69,4 +73,18 @@ nav {
 
 .hamburger i {
     color:white;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-maindiv {
+    width:40vh;
+    height:auto;
+    border: solid black 2px;
 }
