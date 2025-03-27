@@ -10,6 +10,7 @@ body {
     background-position: center;
     height:80vh;
     position:relative;
+    z-index: 2;
 }
 
 .nav-head::before {
@@ -20,4 +21,14 @@ body {
     width: 100%;
     height: 100%;
     background-image: linear-gradient(to bottom, rgba(113,123,170,0.3), rgb(255, 255, 255));
+    z-index:1;
+}
+
+nav {
+    position: relative;
+    z-index: 3;
+}
+
+.titre-site h1 {
+    margin:0;
 }
