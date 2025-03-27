@@ -296,7 +296,7 @@ header {
 .section-pricing {
     text-align: center;
     padding-top:30px;
-    padding-bottom: 120px;
+    padding-bottom: 70px;
 }
 
 .pricing-rangee {
@@ -375,4 +375,63 @@ header {
     font-size:17px;
     border-radius: 2px;
     margin-top: 24px;
+}
+
+/* Section Hire Me */
+
+.section-hire {
+    background-color: #695aa6;
+    height:auto;
+    display: flex;
+    padding-top:11px;
+    padding-bottom:11px;
+    margin-bottom:50px;
+}
+
+.hire-wrapper {
+    display: flex;
+    flex:1.75;
+    justify-content: center;
+}
+
+.hire-text {
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+.hire-text div:nth-of-type(1) p:first-child {
+    font-family: "Baloo 2";
+    color:white;
+    font-size: 22px;
+    font-weight: bold;
+    margin:0;
+}
+
+.hire-text div:nth-of-type(2) p:first-child {
+    font-family: "Noto Sans";
+    color:white;
+    font-weight: 300;
+    margin:0;
+    letter-spacing: 0.7px;
+    padding-top: 5px;
+}
+
+.hire-btn {
+    display: flex;
+    align-items: center;
+    flex:1;
+}
+
+.hire-btn button {
+    border:none;
+    background-color: white;
+    color:black;
+    font-family:"Baloo 2";
+    font-weight: 800;
+    font-size: 21px;
+    padding-left: 16px;
+    padding-right:16px;
+    padding-top:8px;
+    padding-bottom:8px;
+    border-radius: 3px;
 }
