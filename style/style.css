@@ -10,7 +10,7 @@ body {
     background-image: url('../images/header.jpg');
     background-size: cover;
     background-position: center;
-    height:80vh;
+    height:auto;
     position:relative;
     z-index: 1;
 }
@@ -87,12 +87,12 @@ header {
     align-items: center;
     justify-content: center;
     /* border: solid black 2px; */
-    padding-top: 90px;
+    padding-top: 80px;
 }
 
 .header-maindiv {
-    top:50px;
-    width:60vh;
+    /* top:40px; */
+    width:65vh;
     height:auto;
     /* border: solid black 2px; */
 }
@@ -112,8 +112,9 @@ header {
     color:#41454e;
     font-size: 90px;
     font-weight:800;
-    line-height: 1;
+    line-height: 1.2;
     margin:0;
+    letter-spacing: -1.5px;
     /* border:solid black 1px; */
 }
 
@@ -124,7 +125,6 @@ header {
     font-size: 25px;
     letter-spacing: 8px;
     margin:0;
-    margin-top: 5px;
 }
 
 .header-btn button {
