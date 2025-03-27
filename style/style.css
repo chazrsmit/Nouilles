@@ -202,11 +202,12 @@ header {
 }
 
 .about-me p {
-    font-family: "Noto Sans JP";
+    font-family: "Noto Sans";
     color:#181a1e;
-    font-weight: 300;
+    font-weight:300;
     letter-spacing: 0.6px;
     font-size: 16.5px;
+    line-height: 1.5;
     /* border:palevioletred solid 1px; */
 }
 
