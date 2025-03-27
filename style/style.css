@@ -146,3 +146,27 @@ header {
     font-weight: 400;
     margin:0;
 }
+
+/* Section About */
+
+.section-about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:auto;
+    border:red solid 3px;
+}
+
+.section-about div:first-child {
+    display: flex;
+    border:solid black 2px;
+}
+
+.section-about .image img {
+    width:28vw;
+}
+
+.about-me {
+    border:solid black 2px;
+    width:40vw;
+}
