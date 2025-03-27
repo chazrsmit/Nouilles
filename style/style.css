@@ -9,7 +9,7 @@ body {
 .nav-head {
     background: linear-gradient(to bottom, rgba(113,123,170,0.1), rgb(255, 255, 255)), url('../images/header.jpg');
     background-size: cover;
-    background-position: 50% 30%;
+    background-position: 50% 35%;
     height:auto;
     padding-top:60px;
     /* position:relative; */
@@ -41,13 +41,10 @@ nav {
 
 .titre-site h1 {
     margin:0;
-    color:white;
+    color:#695aa6;
     font-family: "Baloo 2";
-    font-size: 22px;
-}
-
-.titre-site h1:focus {
-    color:black;
+    font-size: 34px;
+    font-weight: 800;
 }
 
 .nav-hamb {
@@ -67,9 +64,10 @@ nav {
 
 .navbar p {
     font-family: "Baloo 2";
-    color: white;
-    font-size: 14px;
-    font-weight: bold;
+    color:#41454e;
+    font-size: 18px;
+    font-weight: 800;
+    margin:0;
 }
 
 .hamburger {
@@ -80,7 +78,7 @@ nav {
 }
 
 .hamburger i {
-    color:white;
+    color:#41454e;
 }
 
 /* Header */
@@ -363,4 +361,13 @@ header {
 
 .pricing-card:nth-of-type(3) .pricing-prix {
     margin-top:11.5px;
+}
+
+.pricing-card button {
+    background-color: #695aa6;
+    border:0;
+    color:white;
+    font-family: "Noto Sans";
+    padding-top: 8px;
+    padding-bottom:8px;
 }
