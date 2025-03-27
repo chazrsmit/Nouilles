@@ -9,7 +9,7 @@ body {
 .nav-head {
     background: linear-gradient(to bottom, rgba(113,123,170,0.1), rgb(255, 255, 255)), url('../images/header.jpg');
     background-size: cover;
-    background-position: 50% 25%;
+    background-position: 50% 30%;
     height:auto;
     /* position:relative; */
     /* z-index: 1; */
