@@ -246,11 +246,20 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border:rgb(190, 190, 190) solid 1px;
-    width:250px;
-    height:250px;
+    border:rgb(221, 221, 221) solid 1px;
+    width:280px;
+    height:280px;
 }
 
 .service-icon img {
     width:60px;
+}
+
+.service-st p {
+    font-family: "Baloo 2";
+    color:#695aa6;
+    margin:0;
+    font-size: 23px;
+    font-weight: 800;
+    padding-top:20px;
 }
