@@ -335,9 +335,9 @@ header {
 .pricing-card p {
     font-family: "Noto Sans";
     color:#7f7f7f;
-    line-height: 2;
+    line-height: 2.2;
     margin:0;
-    letter-spacing: 0.8px;
+    letter-spacing: 0.6px;
 }
 
 .pricing-croix p {
@@ -370,4 +370,9 @@ header {
     font-family: "Noto Sans";
     padding-top: 8px;
     padding-bottom:8px;
+    padding-left: 14px;
+    padding-right:14px;
+    font-size:17px;
+    border-radius: 2px;
+    margin-top: 24px;
 }
