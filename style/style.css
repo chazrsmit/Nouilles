@@ -454,8 +454,7 @@ header {
 }
 
 .testimonial-box1, .testimonial-box2 {
-    /* border:rgb(221, 221, 221)  1px solid; */
-    width:500px;
+    width:540px;
     height:auto;
 }
 
@@ -464,12 +463,12 @@ header {
     content:"";
     width:85px;
     height:85px;
-    border-color: white 10px solid;
+    border: white 4px solid;
     border-radius: 50%;
     background-image: url('../images/avatar2.jpg');
     background-size: cover;
-    margin-left: -43px;
-    margin-top:-125px;
+    margin-left: -46px;
+    margin-top:-127px;
 }
 
 .testimonial-box2::after {
@@ -477,12 +476,12 @@ header {
     content:"";
     width:85px;
     height:85px;
-    border-color: white 30px solid;
+    border: white 4px solid;
     border-radius: 50%;
     background-image: url('../images/avatar3.jpg');
     background-size: cover;
-    margin-left: -43px;
-    margin-top:-125px;
+    margin-left: -46px;
+    margin-top:-127px;
 }
 
 .testimonial-textes {
