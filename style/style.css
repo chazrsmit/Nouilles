@@ -180,7 +180,7 @@ header {
     padding-top:50px;
 }
 
-.about-me h6, .section-service h6 {
+.about-me h6, .section-service h6, .section-portfolio h6 {
     font-family: "Noto Sans";
     text-transform: capitalize;
     font-size: 17px;
@@ -191,7 +191,7 @@ header {
     /* border:palevioletred solid 1px; */
 }
 
-.about-me h5, .section-service h5 {
+.about-me h5, .section-service h5, .section-portfolio h5 {
     margin:0;
     font-family: "Baloo 2";
     text-transform: capitalize;
