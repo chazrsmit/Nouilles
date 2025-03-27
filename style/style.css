@@ -192,3 +192,11 @@ header {
     color:#695aa6;
     font-weight: 800;
 }
+
+.about-me p {
+    font-family: "Noto Sans JP";
+    color:#181a1e;
+    font-weight: 300;
+    letter-spacing: 0.6px;
+    font-size: 17px;
+}
