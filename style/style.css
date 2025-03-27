@@ -298,17 +298,32 @@ header {
 }
 
 .pricing-rangee {
-    border:yellowgreen 5px solid;
     display: flex;
     justify-content: center;
+    margin-top:60px;
 }
 
 .pricing-card {
     border:rgb(221, 221, 221)  1px solid;
-    width:400px;
+    width:386px;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+.pricing-card div:first-child {
+    /* border:#695aa6 solid 1px; */
+    margin-bottom: 10px;
 }
 
 .pricing-card img {
-    width:75px;
+    width:70px;
     font-weight: 300;
+}
+
+
+.pricing-card p {
+    font-family: "Noto Sans";
+    color:#7f7f7f;
+    line-height: 2;
+    margin:0;
 }
