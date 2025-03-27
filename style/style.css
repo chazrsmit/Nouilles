@@ -7,15 +7,15 @@ body {
 /* Nav */
 
 .nav-head {
-    background-image: url('../images/header.jpg');
+    background: linear-gradient(to bottom, rgba(113,123,170,0.1), rgb(255, 255, 255)), url('../images/header.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: 50% 25%;
     height:auto;
-    position:relative;
-    z-index: 1;
+    /* position:relative; */
+    /* z-index: 1; */
 }
 
-.nav-head::before {
+/* .nav-head::before {
     position:absolute;
     content:"";
     top: 0;
@@ -24,7 +24,7 @@ body {
     height: 100%;
     background-image: linear-gradient(to bottom, rgba(113,123,170,0.1), rgb(255, 255, 255));
     z-index:1;
-}
+} */
 
 nav {
     position: sticky;
