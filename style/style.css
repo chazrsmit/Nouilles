@@ -296,3 +296,19 @@ header {
     padding-top:30px;
     padding-bottom: 120px;
 }
+
+.pricing-rangee {
+    border:yellowgreen 5px solid;
+    display: flex;
+    justify-content: center;
+}
+
+.pricing-card {
+    border:rgb(221, 221, 221)  1px solid;
+    width:400px;
+}
+
+.pricing-card img {
+    width:75px;
+    font-weight: 300;
+}
