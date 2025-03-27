@@ -182,26 +182,27 @@ header {
     padding-top:50px;
 }
 
-.about-me h6, .section-service h6, .section-portfolio h6 {
+/* Titres des sections */
+
+.about-me h6, .section-service h6, .section-portfolio h6, .section-pricing h6 {
     font-family: "Noto Sans";
     text-transform: capitalize;
     font-size: 17px;
     color:#7f7f7f;
     font-weight: 400;
-    letter-spacing: 1.2px;
     margin:0;
-    /* border:palevioletred solid 1px; */
 }
 
-.about-me h5, .section-service h5, .section-portfolio h5 {
+.about-me h5, .section-service h5, .section-portfolio h5, .section-pricing h5 {
     margin:0;
     font-family: "Baloo 2";
     text-transform: capitalize;
     font-size: 38px;
     color:#695aa6;
     font-weight: 800;
-    /* border:palevioletred solid 1px; */
 }
+
+/* Fin titres des sections */
 
 .about-me p {
     font-family: "Noto Sans";
@@ -274,7 +275,6 @@ header {
     text-align: center;
     padding-top:30px;
     padding-bottom: 120px;
-
 }
 
 .portfolio-rangee {
@@ -289,3 +289,10 @@ header {
     height:24.3vw;
 }
 
+/* Section pricing */
+
+.section-pricing {
+    text-align: center;
+    padding-top:30px;
+    padding-bottom: 120px;
+}
