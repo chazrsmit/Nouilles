@@ -155,11 +155,14 @@ header {
     justify-content: center;
     height:auto;
     border:red solid 3px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-.section-about div:first-child {
+.section-about .about-box {
     display: flex;
-    border:solid black 2px;
+    border:solid orange 2px;
+    height:auto;
 }
 
 .section-about .image img {
@@ -167,6 +170,25 @@ header {
 }
 
 .about-me {
-    border:solid black 2px;
+    /* border:solid black 2px; */
     width:40vw;
+}
+
+.about-me h6 {
+    font-family: "Noto Sans JP";
+    text-transform: capitalize;
+    font-size: 17px;
+    color:#7f7f7f;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    margin:0;
+}
+
+.about-me h5 {
+    margin:0;
+    font-family: "Baloo 2";
+    text-transform: capitalize;
+    font-size: 38px;
+    color:#695aa6;
+    font-weight: 800;
 }
