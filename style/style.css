@@ -86,7 +86,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: solid black 2px;
+    /* border: solid black 2px; */
     padding-top: 90px;
 }
 
@@ -94,7 +94,7 @@ header {
     top:50px;
     width:60vh;
     height:auto;
-    border: solid black 2px;
+    /* border: solid black 2px; */
 }
 
 .header-h3 h3 {
@@ -103,7 +103,7 @@ header {
     color:#585960;
     font-size: 68px;
     font-weight: 800;
-    border: black solid 2px;
+    /* border: black solid 2px; */
     margin:0;
 }
 
@@ -114,13 +114,35 @@ header {
     font-weight:800;
     line-height: 1;
     margin:0;
-    border:solid black 1px;
+    /* border:solid black 1px; */
 }
 
 .header-h4 h4 {
-    font-family: "Roboto";
+    font-family: "Noto Sans JP";
     text-transform: uppercase;
     font-weight: 300;
     font-size: 25px;
     letter-spacing: 8px;
+    margin:0;
+    margin-top: 5px;
+}
+
+.header-btn button {
+    background-color: #695aa6;
+    padding-top: 9px;
+    padding-bottom: 10px;
+    padding-left: 19px;
+    padding-right: 19px;
+    border-radius: 40px;
+    border:none;
+    margin-top: 40px;
+}
+
+.header-btn button p {
+    color:white;
+    text-transform: capitalize;
+    font-family: "Noto Sans JP";
+    font-size: 17px;
+    font-weight: 400;
+    margin:0;
 }
