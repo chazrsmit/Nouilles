@@ -186,7 +186,7 @@ header {
 
 /* Titres des sections */
 
-.about-me h6, .section-service h6, .section-portfolio h6, .section-pricing h6, .section-testimonial h6, .section-blog h6 {
+.about-me h6, .section-service h6, .section-portfolio h6, .section-pricing h6, .section-testimonial h6, .section-blog h6, .section-contact h6 {
     font-family: "Noto Sans";
     text-transform: capitalize;
     font-size: 17px;
@@ -195,7 +195,7 @@ header {
     margin:0;
 }
 
-.about-me h5, .section-service h5, .section-portfolio h5, .section-pricing h5, .section-testimonial h5, .section-blog h5 {
+.about-me h5, .section-service h5, .section-portfolio h5, .section-pricing h5, .section-testimonial h5, .section-blog h5, .section-contact h5 {
     margin:0;
     font-family: "Baloo 2";
     text-transform: capitalize;
@@ -526,7 +526,7 @@ header {
 
 .blog-img {
     width:354px;
-    height:354px;
+    height:355px;
 }
 
 .blog-img img {
@@ -602,4 +602,15 @@ header {
 .blog-coms i {
     color:#7f7f7f;
     font-size:15px;
+}
+
+/* Section contact */
+
+.section-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 120px;
+    padding-bottom: 30px;
 }
