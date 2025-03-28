@@ -547,6 +547,14 @@ header {
     font-size: 14px;
 }
 
+.blog-textes br {
+    display: block;
+    content: "";
+    font-size: 14px;
+    line-height: 4px;
+    height: 10px;
+}
+
 .blog-extrait {
     overflow: hidden;
     max-height: 180px;
