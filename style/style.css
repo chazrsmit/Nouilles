@@ -167,7 +167,7 @@ header {
     border-radius: 40px;
     margin-top: 40px;
     cursor:pointer;
-    transition: ease-in 0.2s;
+    transition: ease-in 0.1s;
     color:white;
     text-transform: capitalize;
     font-family: "Noto Sans";
@@ -276,7 +276,13 @@ header {
     border:#695aa6 solid 2px;
     margin-top:30px;
     cursor:pointer;
+    transition: ease-in 0.1s;
 }
+
+.about-me button:hover {
+    box-shadow: 0.15em 0.15em 0.1em #695aa6;
+}
+
 
 /* Section Service */
 
