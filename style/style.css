@@ -640,3 +640,39 @@ header {
     padding-left:12px;
     padding-right:12px;
 }
+
+/* copyright */
+
+.footer-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top:50px;
+}
+
+.footer-wrapper div {
+    width: 63.5vw;
+    border-top:1px solid rgb(221, 221, 221);
+}
+
+footer {
+    display:flex;
+    justify-content: space-around;
+    /* border-top:1px solid rgb(221, 221, 221);
+    width:70vw; */
+}
+
+.copyright p {
+    font-family: "Noto Sans";
+    font-size: 17px;
+    color:#7f7f7f;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.socials i {
+    color:#6c757d;
+}
