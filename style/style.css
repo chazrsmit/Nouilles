@@ -186,7 +186,7 @@ header {
 
 /* Titres des sections */
 
-.about-me h6, .section-service h6, .section-portfolio h6, .section-pricing h6, .section-testimonial h6 {
+.about-me h6, .section-service h6, .section-portfolio h6, .section-pricing h6, .section-testimonial h6, .section-blog h6 {
     font-family: "Noto Sans";
     text-transform: capitalize;
     font-size: 17px;
@@ -195,7 +195,7 @@ header {
     margin:0;
 }
 
-.about-me h5, .section-service h5, .section-portfolio h5, .section-pricing h5, .section-testimonial h5 {
+.about-me h5, .section-service h5, .section-portfolio h5, .section-pricing h5, .section-testimonial h5, .section-blog h5 {
     margin:0;
     font-family: "Baloo 2";
     text-transform: capitalize;
@@ -504,4 +504,32 @@ header {
     color:#695aa6;
     font-weight: 800;
     font-size: 20px;
+}
+
+/* Section blog */
+
+.section-blog {
+    padding-top:30px;
+    padding-bottom: 50px;
+}
+
+.blog-titres {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.blog-box {
+    border:#7f7f7f 1px solid;
+}
+
+.blog-img {
+    width: 400px;
+    height:400px;
+}
+
+.blog-img img {
+    object-fit: cover; 
+    /* permet de faire contenier l'image dans la div sans la déformer */
+    height: 400px;
+    width:400px;
 }
