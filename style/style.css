@@ -42,6 +42,14 @@ nav {
     /* une marge négative pour placer la nav sur le background de la section NavHead */
 }
 
+@media (max-width:576px) {
+    nav {
+        justify-content: space-between;
+        padding-left: 6vw;
+        padding-right: 6vw;
+    }
+}
+
 .titre-site h1 {
     margin:0;
     color:#695aa6;
@@ -59,9 +67,15 @@ nav {
 }
 
 .navbar {
-    display: flex;
+    display: none;
     gap:20px;
 }
+
+/* @media (max-width:576px) {
+    .navbar {
+        display: none;
+    }
+} */
 
 .navbar p {
     font-family: "Baloo 2";
@@ -82,6 +96,21 @@ nav {
 }
 
 /* Header */
+
+@media (max-width:576px) {
+    header {
+        padding-left: 6vw;
+        padding-right: 6vw;
+    }
+
+    .header-h1 div h1, .header-h3 div h3, .header-h4 h4, .header-btn {
+        text-align: center;
+    }
+
+    .header-btn button p {
+        font-size: 20px !important;
+    }
+}
 
 header {
     position: relative;
@@ -148,6 +177,25 @@ header {
 
 /* Section About */
 
+@media (max-width:576px) {
+    .section-about .image img {
+        width:55vw !important;
+    }
+
+    .about-box {
+        text-align: center !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-me p {
+        overflow: hidden;
+        height:200px;
+    }
+}
+
 .section-about {
     display: flex;
     align-items: center;
@@ -155,12 +203,14 @@ header {
     height:auto;
     padding-top: 100px;
     padding-bottom: 30px;
+    flex-wrap: wrap;
 }
 
 .section-about .about-box {
     display: flex;
     height:auto;
     gap:25px;
+    flex-wrap: wrap;
 }
 
 .section-about .image img {
@@ -170,6 +220,7 @@ header {
 .about-me {
     width:49vw;
     padding-top:50px;
+    flex-wrap: wrap !important;
 }
 
 /* Titres des sections */
@@ -227,8 +278,9 @@ header {
 .service-boxes {
     display: flex;
     justify-content: center;
-    gap:30px;
+    gap:38px;
     padding-top:50px;
+    flex-wrap: wrap;
 }
 
 .service-box {
@@ -238,8 +290,8 @@ header {
     align-items: center;
     border:rgb(221, 221, 221) solid 1px;
     border-radius: 3px;
-    width:270px;
-    height:255px;
+    width:292px;
+    height:270px;
 }
 
 .service-icon img {
@@ -261,6 +313,7 @@ header {
     text-align: center;
     padding-top:30px;
     padding-bottom: 120px;
+    flex-wrap: wrap !important;
 }
 
 .portfolio-rangee {
@@ -268,11 +321,13 @@ header {
     justify-content: center;
     gap:30px;
     padding-top: 60px;
+    flex-wrap: wrap !important;
 }
 
 .portfolio-rangee img {
     width:24.3vw;
     height:24.3vw;
+    flex-wrap: wrap !important;
 }
 
 /* Section pricing */
@@ -287,12 +342,13 @@ header {
     display: flex;
     justify-content: center;
     margin-top:60px;
+    flex-wrap: wrap;
 }
 
 .pricing-card {
     border-bottom:rgb(221, 221, 221)  1px solid;
     border-top:rgb(221, 221, 221)  1px solid;
-    width:386px;
+    width:430px;
     padding-top:30px;
     padding-bottom:30px;
 }
@@ -434,6 +490,7 @@ header {
     gap:80px;
     justify-content: center;
     margin-top:50px;
+    flex-wrap: wrap;
 }
 
 .testimonial-box1, .testimonial-box2 {
@@ -490,6 +547,18 @@ header {
 
 /* Section blog */
 
+@media (max-width:576px) {
+    .blog-img img {
+        object-fit: cover; 
+        height:10vw;
+        width:10vw;
+    }
+
+    .blog-box {
+        flex-wrap: wrap !important;
+    }
+}
+
 .section-blog {
     padding-top:30px;
     padding-bottom: 50px;
@@ -504,6 +573,7 @@ header {
     display: flex;
     width:76.2vw;
     margin-top: 40px;
+    /* flex-wrap: wrap; */
 }
 
 .blog-img {
@@ -606,8 +676,16 @@ header {
     gap:30px;
 }
 
+@media (max-width:576px) {
+
+    .message textarea {
+        width:70vw;
+    }
+    
+}
+
 .message textarea {
-    width:720px;
+    width:47.3vw;
     height: 150px;
     border:rgb(195, 195, 195) 1px solid;
     border-radius: 3px;
@@ -643,6 +721,24 @@ header {
 
 /* copyright */
 
+@media (max-width:576px) {
+    .copyright {
+        padding-left:0 !important;
+    }
+
+    .socials {
+        padding-right:0 !important;
+    }
+
+    .footer-wrapper div {
+        text-align: center;
+    }
+
+    footer {
+        justify-content: center !important;
+    }
+}
+
 .footer-wrapper {
     display: flex;
     justify-content: center;
@@ -651,7 +747,7 @@ header {
 }
 
 .footer-wrapper div {
-    width: 1156px;
+    width: 76.2vw;
     border-top:1px solid rgb(221, 221, 221);
 }
 
@@ -659,12 +755,11 @@ footer {
     display:flex;
     justify-content: space-between;
     margin-bottom: 10px;
-    /* border-top:1px solid rgb(221, 221, 221);
-    width:70vw; */
+    flex-wrap: wrap;
 }
 
 .copyright {
-    padding-left: 180px;
+    padding-left: 11.8vw;
 }
 
 .copyright p {
@@ -677,7 +772,7 @@ footer {
     display: flex;
     align-items: center;
     gap:5px;
-    padding-right: 180px;
+    padding-right: 11.8vw;
 }
 
 .socials i {
