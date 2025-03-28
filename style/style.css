@@ -922,7 +922,7 @@ header {
 @media (max-width:576px) {
 
     .message textarea {
-        width:80vw;
+        width:80vw !important;
         height: 150px;
         border:rgb(195, 195, 195) 1px solid;
         border-radius: 3px;
