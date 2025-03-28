@@ -14,6 +14,7 @@ body {
     padding-top:60px;
     /* position:relative; */
     /* z-index: 1; */
+    /* attention s'il y a une position relative, pas possible d'ajuster la position avec les pourcentages */
 }
 
 /* .nav-head::before {
@@ -29,6 +30,7 @@ body {
 
 nav {
     position: sticky;
+    /* pour être sticky partout sur le site, il ne peut pas être contenu dans une div? */
     top: 0;
     overflow: hidden;
     z-index: 3;
@@ -37,6 +39,7 @@ nav {
     align-items: center;
     padding-top: 10px;
     margin-bottom:-70px;
+    /* une marge négative pour placer la nav sur le background de la section NavHead */
 }
 
 .titre-site h1 {
@@ -53,13 +56,11 @@ nav {
     display:flex;
     gap:30px;
     justify-content: space-between;
-    /* border: solid black 2px; */
 }
 
 .navbar {
     display: flex;
     gap:20px;
-    /* border: black 2px solid; */
 }
 
 .navbar p {
@@ -71,7 +72,6 @@ nav {
 }
 
 .hamburger {
-    /* border:solid black 2px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,15 +90,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: solid black 2px; */
     padding-top: 80px;
 }
 
 .header-maindiv {
-    /* top:40px; */
     width:65vh;
     height:auto;
-    /* border: solid black 2px; */
 }
 
 .header-h3 h3 {
@@ -107,7 +104,6 @@ header {
     color:#585960;
     font-size: 68px;
     font-weight: 800;
-    /* border: black solid 2px; */
     margin:0;
 }
 
@@ -119,7 +115,6 @@ header {
     line-height: 1.2;
     margin:0;
     letter-spacing: -1.5px;
-    /* border:solid black 1px; */
 }
 
 .header-h4 h4 {
@@ -158,14 +153,12 @@ header {
     align-items: center;
     justify-content: center;
     height:auto;
-    /* border:red solid 3px; */
     padding-top: 100px;
     padding-bottom: 30px;
 }
 
 .section-about .about-box {
     display: flex;
-    /* border:solid orange 2px; */
     height:auto;
     gap:25px;
 }
@@ -174,12 +167,7 @@ header {
     width:28vw;
 }
 
-.section-about .image {
-    /* border:green 2px solid; */
-}
-
 .about-me {
-    /* border:solid black 2px; */
     width:49vw;
     padding-top:50px;
 }
@@ -212,7 +200,6 @@ header {
     letter-spacing: 0.6px;
     font-size: 16.5px;
     line-height: 1.5;
-    /* border:palevioletred solid 1px; */
 }
 
 .about-me button {
@@ -233,13 +220,11 @@ header {
 
 .section-service {
     padding-top:120px;
-    /* border:pink 2px solid; */
     text-align: center;
     padding-bottom: 120px;
 }
 
 .service-boxes {
-    /* border:blueviolet 2px solid; */
     display: flex;
     justify-content: center;
     gap:30px;
@@ -321,7 +306,6 @@ header {
 }
 
 .pricing-card div:first-child {
-    /* border:#695aa6 solid 1px; */
     margin-bottom: 10px;
 }
 
@@ -488,7 +472,6 @@ header {
     padding-right:30px;
     padding-top:10px;
     border:rgb(221, 221, 221) solid 1px;
-    /* border: pink 2px solid; */
 }
 
 .testimonial-textes div:first-of-type p:first-of-type {
@@ -620,7 +603,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:25px;
+    gap:30px;
 }
 
 .message textarea {
@@ -643,4 +626,17 @@ header {
     color:#7f7f7f;
     padding-left:10px;
     padding-top: 4px;
+}
+
+.contact-btn button {
+    background-color: white;
+    border:#695aa6 1px solid;
+    border-radius: 4px;
+    font-family: "Noto Sans";
+    color:#695aa6;
+    font-size: 17px;
+    padding-top:8px;
+    padding-bottom:8px;
+    padding-left:12px;
+    padding-right:12px;
 }
