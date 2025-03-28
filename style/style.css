@@ -739,7 +739,7 @@ header {
 
 .contact-btn button {
     background-color: white;
-    border:#695aa6 1px solid;
+    border:#695aa6 2px solid;
     border-radius: 4px;
     font-family: "Noto Sans";
     color:#695aa6;
@@ -749,6 +749,12 @@ header {
     padding-left:12px;
     padding-right:12px;
     cursor:pointer;
+    transition: ease-in 0.1s;
+}
+
+.contact-btn button:hover {
+    background-color: #695aa6;
+    color:white;
 }
 
 /* copyright */
