@@ -54,7 +54,7 @@ nav {
 
 .titre-site h1 {
     margin:0;
-    color:#695aa6;
+    color:white;
     font-family: "Baloo 2";
     font-size: 34px;
     font-weight: 800;
@@ -94,7 +94,7 @@ nav {
 }
 
 .hamburger i {
-    color:#41454e;
+    color:white;
 }
 
 /* Header */
@@ -159,24 +159,30 @@ header {
 
 .header-btn button {
     background-color: #695aa6;
+    border: #695aa6 2px solid;
     padding-top: 9px;
     padding-bottom: 10px;
-    padding-left: 19px;
-    padding-right: 19px;
+    padding-left: 16px;
+    padding-right: 16px;
     border-radius: 40px;
-    border:none;
     margin-top: 40px;
     cursor:pointer;
-}
-
-.header-btn button p {
+    transition: ease-in 0.2s;
     color:white;
     text-transform: capitalize;
     font-family: "Noto Sans";
     font-size: 17px;
     font-weight: 400;
+}
+
+.header-btn button:hover {
+    background-color: white;
+    border: #695aa6 solid 2px;
+    color:#695aa6;
+}
+
+.header-btn button p {
     margin:0;
-    cursor:pointer;
 }
 
 /* Section About */
