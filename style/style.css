@@ -944,7 +944,10 @@ header {
 
 .message textarea {
     width:47.3vw; 
-    height: 150px;}
+    height: 150px;
+    border:rgb(195, 195, 195) 1px solid;
+    border-radius: 3px;
+}
 
 .message textarea:focus {
     border:rgb(195, 195, 195) 1px solid;
