@@ -778,9 +778,12 @@ header {
     }
 
     .blog-extrait {
-        max-height: 168.5px !important;
-        padding-bottom:40px !important;
-    }
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4; /* number of lines to show */
+        -webkit-box-orient: vertical;
+ }
 
     .blog-img {
         margin-bottom:-20px;
@@ -852,6 +855,8 @@ header {
     margin-bottom:18px;
     padding:0px;
     margin-top:-10px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
 }
 
 .blog-extrait p {
