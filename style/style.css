@@ -781,8 +781,8 @@ header {
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 4; /* number of lines to show */
-        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4; /* nb de lignes */
+        -webkit-box-orient: vertical; /* sens des lignes */
  }
 
     .blog-img {
@@ -841,22 +841,25 @@ header {
     font-size: 14px;
 }
 
-.blog-textes br {
+
+/* .blog-textes br {
     display: block;
     content: "";
     font-size: 14px;
     line-height: 4px;
     height: 10px;
-}
+} */
 
 .blog-extrait {
     overflow: hidden;
-    max-height: 180px;
-    margin-bottom:18px;
+    /* max-height: 180px; */
+    margin-bottom:25px;
     padding:0px;
-    margin-top:-10px;
+    /* margin-top:-10px; */
     text-overflow: ellipsis;
     display: -webkit-box;
+    -webkit-line-clamp: 6; /* nb de lignes */
+    -webkit-box-orient: vertical; /* sens des lignes */
 }
 
 .blog-extrait p {
