@@ -519,17 +519,68 @@ header {
 }
 
 .blog-box {
-    border:#7f7f7f 1px solid;
+    border:rgb(221, 221, 221) 1px solid;
+    display: flex;
 }
 
 .blog-img {
-    width: 400px;
-    height:400px;
+    width:350px;
+    height:350px;
 }
 
 .blog-img img {
     object-fit: cover; 
-    /* permet de faire contenier l'image dans la div sans la déformer */
-    height: 400px;
-    width:400px;
+    /* permet de faire contenir l'image dans la div sans la déformer */
+    height:350px;
+    width:350px;
+}
+
+.blog-textes {
+    padding: 20px;
+}
+
+.blog-textes a {
+    color:#695aa6;
+    font-family: "Noto Sans";
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.blog-extrait p {
+    font-family: "Noto Sans";
+    color:#181a1e;
+    font-weight: 300;
+    letter-spacing: 2;
+}
+
+.blog-textes h5 {
+    font-size: 22px;
+}
+
+.blog-meta {
+    display: flex;
+    gap:15px;
+}
+
+.blog-meta p {
+    font-family: "Noto Sans";
+    color:#7f7f7f;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.blog-likes, .blog-coms {
+    display: flex;
+    gap:5px;
+    align-items: center;
+}
+
+.blog-likes i {
+    color:palevioletred;
+    font-size:15px;
+}
+
+.blog-coms i {
+    color:#7f7f7f;
+    font-size:15px;
 }
