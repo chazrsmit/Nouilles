@@ -647,18 +647,24 @@ header {
     display: flex;
     justify-content: center;
     margin-top:50px;
+    margin-bottom: 5px;
 }
 
 .footer-wrapper div {
-    width: 63.5vw;
+    width: 1156px;
     border-top:1px solid rgb(221, 221, 221);
 }
 
 footer {
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-bottom: 10px;
     /* border-top:1px solid rgb(221, 221, 221);
     width:70vw; */
+}
+
+.copyright {
+    padding-left: 180px;
 }
 
 .copyright p {
@@ -671,6 +677,7 @@ footer {
     display: flex;
     align-items: center;
     gap:5px;
+    padding-right: 180px;
 }
 
 .socials i {
@@ -708,5 +715,13 @@ footer {
     padding-bottom:10px;
     padding-left:10.8px;
     padding-right:10.8px;
+    border-radius: 70%;
+}
+
+.fa-instagram, .fa-square-rss {
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:11px;
+    padding-right:11px;
     border-radius: 70%;
 }
