@@ -670,9 +670,43 @@ footer {
 .socials {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap:5px;
 }
 
 .socials i {
     color:#6c757d;
+    font-size:16px;
+    border:3px solid #6c757d;
+}
+
+.fa-facebook-f {
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:13.5px;
+    padding-right:13.5px;
+    border-radius: 70%;
+}
+
+.fa-twitter {
+    padding-top:10.5px;
+    padding-bottom:9.5px;
+    padding-left:11.5px;
+    padding-right:9.5px;
+    border-radius: 70%;
+}
+
+.fa-google-plus-g {
+    padding-top:10.5px;
+    padding-bottom:9.5px;
+    padding-left:8.7px;
+    padding-right:8.7px;
+    border-radius: 70%;
+}
+
+.fa-pinterest {
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:10.8px;
+    padding-right:10.8px;
+    border-radius: 70%;
 }
