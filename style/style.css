@@ -599,6 +599,12 @@ header {
     align-items: center;
 }
 
+.blog-titres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .blog-box {
     border:rgb(221, 221, 221) 1px solid;
     display: flex;
