@@ -188,7 +188,6 @@ header {
 
 .about-me h6, .section-service h6, .section-portfolio h6, .section-pricing h6, .section-testimonial h6, .section-blog h6, .section-contact h6 {
     font-family: "Noto Sans";
-    text-transform: capitalize;
     font-size: 17px;
     color:#7f7f7f;
     font-weight: 400;
@@ -534,6 +533,7 @@ header {
     /* permet de faire contenir l'image dans la div sans la déformer */
     height:355px;
     width:355px;
+
 }
 
 .blog-textes {
@@ -612,5 +612,35 @@ header {
     align-items: center;
     justify-content: center;
     padding-top: 120px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
+}
+
+.contact-form {
+    padding-top:50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:25px;
+}
+
+.message textarea {
+    width:720px;
+    height: 150px;
+    border:rgb(195, 195, 195) 1px solid;
+    border-radius: 3px;
+}
+
+.message textarea:focus {
+    border:rgb(195, 195, 195) 1px solid;
+    border-radius: 3px;
+    outline: none;
+}
+
+.message textarea[placeholder], .message textarea[placeholder]:focus, .message textarea[placeholder]:active {
+    outline: none;
+    font-family: "Noto Sans";
+    font-size: 17px;
+    color:#7f7f7f;
+    padding-left:10px;
+    padding-top: 4px;
 }
