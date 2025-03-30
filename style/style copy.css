@@ -23,8 +23,8 @@ body {
     margin-bottom:-70px;
     position: sticky;
     top: 0;
-    overflow: hidden;
-    z-index: 2;
+    overflow: visible;
+    z-index: 10;
     display: flex;
     justify-content: space-evenly;
     padding-left: 11.5vw;
@@ -40,19 +40,47 @@ body {
         padding-right: 6vw;
     } */
 
+    .navbar {
+        right: 0 !important;
+        animation: close2 0.5s ease-in-out forwards !important;
+    }
+
     .navbar2 {
         display: none;
     }
 
-    .titre-site {
+    /* .titre-site {
         display: none;
+    } */
+
+    #menu-toggle:checked ~ .navbar {
+        display: flex;
+        flex-direction: column;
+        opacity: 1;
+        gap:20px;
+        /* transform: translateX(100%) !important;
+        animation: transform 0.5s ease-in-out, opacity 0.5s ease-in-out !important; */
     }
 
     #menu-toggle:checked ~ .navbar {
         opacity: 1;
-        gap:20px;
-        transform: translateX(-50%) translateY(-16px);
-        animation: bounce 1s ease-in-out;
+        transform: translateX(0); /* Slide into view */
+        pointer-events: auto; 
+    }
+
+    #menu-toggle:checked ~ .navbar li {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-icon {
+        right: 6vw !important;
+    }
+    .menu-icon span {
+        width: 30px;
+        height: 4px;
+        background-color: white;
+        display: block;
     }
 }
 
@@ -176,6 +204,7 @@ body {
   }
 
   /* Apparition menu quand Checkbox Checked */
+  
 #menu-toggle:checked ~ .navbar {
     opacity: 1;
     gap:20px;
@@ -250,6 +279,18 @@ body {
 }
 
 
+@keyframes bounce2 {
+    0%{
+        opacity: 0;
+        transform: translateX(-100px) translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(-100px) translateY(-16px);
+    }
+}
+
 
 @keyframes close {
     0% {
@@ -258,6 +299,21 @@ body {
     }
     100% {
         opacity: 0;
+        transform: translateX(-400px) translateY(-30px);
+    }
+}
+
+@keyframes close2 {
+    0% {
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        transform: translateX(0) translateY(0);
+    }
+    100% {
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
         transform: translateX(-400px) translateY(-30px);
     }
 }
@@ -306,6 +362,9 @@ body {
         cursor: pointer;
         width: 30px;
         gap: 5px;
+        z-index: 100;
+        position: absolute;
+        right:21vw;
       }
       
       .menu-icon span {
