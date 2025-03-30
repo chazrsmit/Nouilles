@@ -24,7 +24,7 @@ body {
     position: sticky;
     top: 0;
     overflow: hidden;
-    z-index: 3;
+    z-index: 2;
     display: flex;
     justify-content: space-evenly;
     padding-left: 11.5vw;
@@ -34,10 +34,25 @@ body {
 }
 
 @media (max-width:576px) {
-    nav {
+    /* nav {
         justify-content: space-between;
         padding-left: 6vw;
         padding-right: 6vw;
+    } */
+
+    .navbar2 {
+        display: none;
+    }
+
+    .titre-site {
+        display: none;
+    }
+
+    #menu-toggle:checked ~ .navbar {
+        opacity: 1;
+        gap:20px;
+        transform: translateX(-50%) translateY(-16px);
+        animation: bounce 1s ease-in-out;
     }
 }
 
@@ -68,11 +83,15 @@ body {
     right: 0;
     animation: close 1s ease-in-out forwards;
     pointer-events: none;
+    z-index: 4;
 }
 
 .navbar2 {
-    opacity: 0;
+    /* opacity: 0; */
+    visibility: hidden;
     display:flex;
+    z-index: 0;
+    position: relative;
 }
 
 
@@ -98,7 +117,7 @@ body {
 } */
 
 .hamburger {
-    position: relative;
+    /* position: relative; */
     display: flex;
     align-content: center;
     justify-content: center;
@@ -133,6 +152,7 @@ body {
     gap:20px;
     transform: translateX(-400px) translateY(-16px);
     animation: bounce 1s ease-in-out;
+    pointer-events: auto;
 }
 
   /* Animer l'apparition du menu */
@@ -161,7 +181,7 @@ body {
 
   /* Animer le Hamburger Icon */
   #menu-toggle:checked + .menu-icon span:nth-child(1) {
-    transform: rotate(45deg) translateY(10px) translateZ(0px);
+    transform: rotate(45deg) translateY(12px);
 
   }
   
@@ -170,7 +190,7 @@ body {
   }
   
   #menu-toggle:checked + .menu-icon span:nth-child(3) {
-    transform: rotate(-45deg) translateY(-10px) translateZ(-25px);
+    transform: rotate(-45deg) translateY(-12px);
   }
 
     /* Hamburger Icon */
