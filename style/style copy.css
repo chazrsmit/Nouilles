@@ -81,13 +81,42 @@ body {
     position: absolute;
     top: 40px;
     right: 0;
-    animation: close 1s ease-in-out forwards;
+    animation: close 0.5s ease-in-out forwards;
     pointer-events: none;
     z-index: 4;
 }
 
+/* .navbar li {
+    pointer-events:none;
+    animation: fadeOut 0.5s ease-in-out forwards;
+}
+
+.navbar li:nth-of-type(6) {
+    animation-delay: 0s;
+}
+
+ .navbar li:nth-of-type(5) {
+    animation-delay: 0.1s;
+}
+
+.navbar li:nth-of-type(4) {
+    animation-delay: 0.2s;
+}
+
+.navbar li:nth-of-type(3) {
+    animation-delay: 0.3s;
+}
+
+.navbar li:nth-of-type(2) {
+    animation-delay: 0.4s;
+}
+
+.navbar li:nth-of-type(1) {
+    animation-delay: 0.5s;
+} */
+
 .navbar2 {
-    /* opacity: 0; */
+    opacity: 0;
     visibility: hidden;
     display:flex;
     z-index: 0;
@@ -151,12 +180,64 @@ body {
     opacity: 1;
     gap:20px;
     transform: translateX(-400px) translateY(-16px);
-    animation: bounce 1s ease-in-out;
+    animation: bounce 0.5s ease-in-out;
     pointer-events: auto;
 }
 
+#menu-toggle:checked ~ .navbar li {
+    animation: fadeIn 0.5s ease-in-out forwards;
+    opacity: 0;
+  }
+
+#menu-toggle:checked ~ .navbar li:nth-of-type(6) {
+    animation-delay: 0s;
+}
+
+#menu-toggle:checked ~ .navbar li:nth-of-type(5) {
+    animation-delay: 0.1s;
+}
+
+#menu-toggle:checked ~ .navbar li:nth-of-type(4) {
+    animation-delay: 0.2s;
+}
+
+#menu-toggle:checked ~ .navbar li:nth-of-type(3) {
+    animation-delay: 0.3s;
+}
+
+#menu-toggle:checked ~ .navbar li:nth-of-type(2) {
+    animation-delay: 0.4s;
+}
+
+#menu-toggle:checked ~ .navbar li:nth-of-type(1) {
+    animation-delay: 0.5s;
+}
+
+#menu-toggle:not(:checked) ~ .navbar li {
+    animation: fadeOut 0.5s ease-in-out forwards;
+}
+
+#menu-toggle:not(:checked) ~ .navbar li:nth-of-type(6) {
+    animation-delay: 0s;
+  }
+  #menu-toggle:not(:checked) ~ .navbar li:nth-of-type(5) {
+    animation-delay: 0.1s;
+  }
+  #menu-toggle:not(:checked) ~ .navbar li:nth-of-type(4) {
+    animation-delay: 0.2s;
+  }
+  #menu-toggle:not(:checked) ~ .navbar li:nth-of-type(3) {
+    animation-delay: 0.3s;
+  }
+  #menu-toggle:not(:checked) ~ .navbar li:nth-of-type(2) {
+    animation-delay: 0.4s;
+  }
+  #menu-toggle:not(:checked) ~ .navbar li:nth-of-type(1) {
+    animation-delay: 0.5s;
+  }
+
   /* Animer l'apparition du menu */
-  @keyframes bounce {
+@keyframes bounce {
     0%{
         opacity: 0;
         transform: translateX(-400px) translateY(-30px);
@@ -168,6 +249,8 @@ body {
     }
 }
 
+
+
 @keyframes close {
     0% {
         opacity: 1;
@@ -178,6 +261,29 @@ body {
         transform: translateX(-400px) translateY(-30px);
     }
 }
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+}
+  
 
   /* Animer le Hamburger Icon */
   #menu-toggle:checked + .menu-icon span:nth-child(1) {
