@@ -1,0 +1,1096 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+    margin:0;
+}
+
+/* Nav */
+
+@media (min-width:760px) {
+.nav-head {
+    background: linear-gradient(to bottom, rgba(113,123,170,0.1), rgb(255, 255, 255)), url('../images/header.jpg');
+    background-size: cover;
+    background-position: 50% 35%;
+    height:auto;
+    padding-top:60px;
+    /* position:relative; */
+    /* z-index: 1; */
+    /* attention s'il y a une position relative, pas possible d'ajuster la position avec les pourcentages */
+}
+}
+
+/* .nav-head::before {
+    position:absolute;
+    content:"";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(113,123,170,0.1), rgb(255, 255, 255));
+    z-index:1;
+} */
+
+nav {
+    position: sticky;
+    /* pour être sticky partout sur le site, il ne peut pas être contenu dans une div? */
+    top: 0;
+    overflow: hidden;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 11.5vw;
+    padding-right: 11.5vw;
+    align-items: center;
+    padding-top: 10px;
+    margin-bottom:-70px;
+    /* une marge négative pour placer la nav sur le background de la section NavHead */
+}
+
+@media (max-width:576px) {
+    nav {
+        justify-content: space-between;
+        padding-left: 6vw;
+        padding-right: 6vw;
+    }
+}
+
+.titre-site h1 {
+    margin:0;
+    color:white;
+    font-family: "Baloo 2";
+    font-size: 34px;
+    font-weight: 800;
+}
+
+.nav-hamb {
+    position: relative;
+    z-index: 3;
+    display:flex;
+    gap:30px;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: none;
+    gap:20px;
+}
+
+/* @media (max-width:576px) {
+    .navbar {
+        display: none;
+    }
+} */
+
+.navbar p {
+    font-family: "Baloo 2";
+    color:#41454e;
+    font-size: 18px;
+    font-weight: 800;
+    margin:0;
+}
+
+.hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger i {
+    color:white;
+}
+
+/* Header */
+
+@media (max-width:576px) {
+
+    .nav-head {
+        background-position: 50% 1% !important;
+        background: linear-gradient(to bottom, rgba(113,123,170,0.1), rgb(255, 255, 255)), url('../images/header.jpg');
+        background-size: cover;
+        height:auto;
+        padding-top:35px;
+    }
+
+    header {
+        padding-left: 6vw;
+        padding-right: 6vw;
+        padding-bottom: 20px !important;
+    }
+
+    .header-h1 div h1, .header-h3 div h3, .header-h4 h4, .header-btn {
+        text-align: center;
+    }
+
+    .header-btn button p {
+        font-size: 20px !important;
+    }
+
+    .header-h1 h1 {
+        line-height: 1 !important;
+    }
+
+    .header-h4 {
+        margin-top:15px;
+    }
+}
+
+header {
+    position: relative;
+    z-index: 3;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.header-maindiv {
+    width:65vh;
+    height:auto;
+}
+
+.header-h3 h3 {
+    font-family: "Baloo 2";
+    text-transform: uppercase;
+    color:#585960;
+    font-size: 68px;
+    font-weight: 800;
+    margin:0;
+}
+
+.header-h1 h1 {
+    font-family: "Baloo 2";
+    color:#41454e;
+    font-size: 90px;
+    font-weight:800;
+    line-height: 1.2;
+    margin:0;
+    letter-spacing: -1.5px;
+}
+
+.header-h4 h4 {
+    font-family: "Noto Sans JP";
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 25px;
+    letter-spacing: 8px;
+    margin:0;
+}
+
+.header-btn button {
+    background-color: #695aa6;
+    border: #695aa6 2px solid;
+    padding-top: 9px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 40px;
+    margin-top: 40px;
+    cursor:pointer;
+    transition: ease-in 0.1s;
+    color:white;
+    text-transform: capitalize;
+    font-family: "Noto Sans";
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.header-btn button:hover {
+    background-color: white;
+    border: #695aa6 solid 2px;
+    color:#695aa6;
+}
+
+.header-btn button p {
+    margin:0;
+}
+
+/* Section About */
+
+@media (max-width:576px) {
+    .section-about .image img {
+        width:55vw !important;
+    }
+
+    .about-box {
+        text-align: center !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-me {
+        width:80vw !important;
+    }
+
+    .about-me p {
+        overflow: hidden;
+        height:200px;
+    }
+}
+
+.section-about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:auto;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.section-about .about-box {
+    display: flex;
+    height:auto;
+    gap:25px;
+    flex-wrap: wrap;
+}
+
+.section-about .image img {
+    width:28vw;
+}
+
+.about-me {
+    width:49vw;
+    padding-top:50px;
+    flex-wrap: wrap !important;
+}
+
+/* Titres des sections */
+
+.about-me h6, .section-service h6, .section-portfolio h6, .section-pricing h6, .section-testimonial h6, .section-blog h6, .section-contact h6 {
+    font-family: "Noto Sans";
+    font-size: 17px;
+    color:#7f7f7f;
+    font-weight: 400;
+    margin:0;
+}
+
+.about-me h5, .section-service h5, .section-portfolio h5, .section-pricing h5, .section-testimonial h5, .section-blog h5, .section-contact h5 {
+    margin:0;
+    font-family: "Baloo 2";
+    text-transform: capitalize;
+    font-size: 38px;
+    color:#695aa6;
+    font-weight: 800;
+}
+
+/* Fin titres des sections */
+
+.about-me p {
+    font-family: "Noto Sans";
+    color:#181a1e;
+    font-weight:300;
+    letter-spacing: 0.6px;
+    font-size: 16.5px;
+    line-height: 1.5;
+}
+
+.about-me button {
+    padding-top: 7px;
+    padding-bottom: 8px;
+    padding-left: 19px;
+    padding-right: 19px;
+    border-radius: 40px;
+    background-color: white;
+    color:#695aa6;
+    font-family: "Noto Sans";
+    font-size: 17px;
+    border:#695aa6 solid 2px;
+    margin-top:30px;
+    cursor:pointer;
+    transition: ease-in 0.1s;
+}
+
+.about-me button:hover {
+    box-shadow: 0.15em 0.15em 0.1em #695aa6;
+}
+
+
+/* Section Service */
+
+@media (max-width:576px) {
+    .service-box {
+        width:50vw !important;
+        height:50vw !important;
+    }
+}
+
+.section-service {
+    padding-top:120px;
+    text-align: center;
+    padding-bottom: 120px;
+}
+
+.service-boxes {
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    padding-top:50px;
+    flex-wrap: wrap;
+}
+
+
+.service-box {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:rgb(221, 221, 221) solid 1px;
+    border-radius: 3px;
+    width:268px;
+    height:255px;
+}
+
+.service-icon img {
+    width:60px;
+}
+
+.service-st p {
+    font-family: "Baloo 2";
+    color:#695aa6;
+    margin:0;
+    font-size: 23px;
+    font-weight: 800;
+    padding-top:20px;
+}
+
+/* Porfolio */
+
+.section-portfolio {
+    text-align: center;
+    padding-top:30px;
+    padding-bottom: 120px;
+    flex-wrap: wrap !important;
+}
+
+@media (max-width:576px) {
+    .section-portfolio {
+        padding-bottom: 100px !important;
+    }
+
+    .portfolio-rangee {
+        margin-top: 60px !important;
+    }
+    .portfolio-rangee img {
+        width:80vw;
+        height:80vw;
+        flex-wrap: wrap !important;
+    }
+}
+
+@media (min-width:768px) {
+    .portfolio-rangee {
+        display: flex;
+        justify-content: center;
+        gap:30px;
+        padding-top: 60px;
+        flex-wrap: wrap !important;
+    }
+    
+    .portfolio-rangee img {
+        width:24.3vw;
+        height:24.3vw;
+        flex-wrap: wrap !important;
+    }
+}
+
+/* Section pricing */
+
+@media (max-width:576px) {
+    .pricing-card {
+        width:80vw !important;
+        height:auto;
+        border:rgb(221, 221, 221)  1px solid;
+    }
+
+    .pricing-rangee {
+        gap:30px;
+    }
+}
+
+.section-pricing {
+    text-align: center;
+    padding-top:30px;
+    padding-bottom: 70px;
+}
+
+.pricing-rangee {
+    display: flex;
+    justify-content: center;
+    margin-top:60px;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    border-bottom:rgb(221, 221, 221)  1px solid;
+    border-top:rgb(221, 221, 221)  1px solid;
+    width:386px;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+.pricing-card:nth-of-type(1), .pricing-card:nth-of-type(2), .pricing-card:nth-of-type(3) {
+    border-left: rgb(221, 221, 221)  1px solid;
+}
+
+.pricing-card:nth-of-type(3) {
+    border-right:rgb(221, 221, 221)  1px solid;
+}
+
+.pricing-card div:first-child {
+    margin-bottom: 10px;
+}
+
+.pricing-card img {
+    width:70px;
+    font-weight: 300;
+}
+
+
+.pricing-card p {
+    font-family: "Noto Sans";
+    color:#7f7f7f;
+    line-height: 2.2;
+    margin:0;
+    letter-spacing: 0.6px;
+}
+
+.pricing-croix p {
+    color:#d6819c;
+    font-weight: 100;
+    font-size: 13px;
+    line-height: 2.9;
+
+}
+
+.pricing-prix p {
+    font-size:40px;
+    letter-spacing: 0px;
+    font-weight:600;
+    color:#4d5053;
+}
+
+.pricing-card:nth-of-type(2) .pricing-prix {
+    margin-top: 5.5px;
+}
+
+.pricing-card:nth-of-type(3) .pricing-prix {
+    margin-top:11.5px;
+}
+
+.pricing-card button {
+    background-color: #695aa6;
+    border: #695aa6 solid 2px;
+    color:white;
+    font-family: "Noto Sans";
+    padding-top: 8px;
+    padding-bottom:8px;
+    padding-left: 14px;
+    padding-right:14px;
+    font-size:17px;
+    border-radius: 2px;
+    margin-top: 24px;
+    cursor:pointer;
+    transition:ease-in 0.1s;
+}
+
+.pricing-card button:hover {
+    background-color: white;
+    border: #695aa6 solid 2px;
+    color:#695aa6;
+}
+
+/* Section Hire Me */
+
+@media (max-width:576px) {
+    .section-hire {
+        background-color: #695aa6;
+        height:auto;
+        flex-wrap: wrap !important;
+        text-align: center;
+        padding-bottom:40px;
+        margin-bottom: 50px;
+    }
+
+}
+
+@media (min-width:768px) {
+    .section-hire {
+        background-color: #695aa6;
+        height:auto;
+        display: flex;
+        padding-top:11px;
+        padding-bottom:11px;
+        margin-bottom:50px;
+        flex-wrap: wrap !important;
+    }
+
+    
+    .hire-btn {
+        display: flex;
+        align-items: center;
+        flex:1;
+    }
+
+    .hire-wrapper {
+        display: flex;
+        flex:1.75;
+        justify-content: center;
+        flex-wrap: wrap !important;
+    }
+
+}
+
+/* .section-hire {
+    background-color: #695aa6;
+    height:auto;
+    display: flex;
+    padding-top:11px;
+    padding-bottom:11px;
+    margin-bottom:50px;
+    flex-wrap: wrap !important;
+} */
+
+/* .hire-wrapper {
+    display: flex;
+    flex:1.75;
+    justify-content: center;
+    flex-wrap: wrap !important;
+} */
+
+.hire-text {
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+.hire-text div:nth-of-type(1) p:first-child {
+    font-family: "Baloo 2";
+    color:white;
+    font-size: 22px;
+    font-weight: bold;
+    margin:0;
+}
+
+.hire-text div:nth-of-type(2) p:first-child {
+    font-family: "Noto Sans";
+    color:white;
+    font-weight: 300;
+    margin:0;
+    letter-spacing: 0.7px;
+    padding-top: 5px;
+}
+/* 
+.hire-btn {
+    display: flex;
+    align-items: center;
+    flex:1;
+} */
+
+.hire-btn button {
+    border:none;
+    background-color: white;
+    color:black;
+    font-family:"Baloo 2";
+    font-weight: 800;
+    font-size: 21px;
+    padding-left: 16px;
+    padding-right:16px;
+    padding-top:8px;
+    padding-bottom:8px;
+    border-radius: 3px;
+    cursor:pointer;
+    transition: ease-in 0.1s;
+}
+
+.hire-btn button:hover {
+    background-color: #ececec;
+}
+
+/* Section testimonial */
+
+@media (max-width:576px) {
+
+    .section-testimonial {
+        padding-bottom: 100px !important;
+    }
+
+    .testimonials {
+        gap:10px !important;
+        margin-top: 15px !important;
+    }
+
+
+    .testimonial-box1, .testimonial-box2 {
+        width:80vw !important;
+        height:auto;
+        position: relative;
+    }
+
+    .testimonial-textes {
+        padding:0;
+    }
+
+    .testimonial-box1::before {
+        display:flex;
+        /* justify-content: center;
+        align-items: center; */
+        content:"";
+        width:85px;
+        height:85px;
+        border: white 4px solid;
+        border-radius: 50%;
+        background-image: url('../images/avatar2.jpg');
+        background-size: cover;
+        top:10%;
+        left:30vw;
+        position: relative;
+        /* margin-left: -46px;
+        margin-top:-127px; */
+    }
+
+    .testimonial-box2::before {
+        display:block;
+        content:"";
+        width:85px;
+        height:85px;
+        border: white 4px solid;
+        border-radius: 50%;
+        background-image: url('../images/avatar3.jpg');
+        background-size: cover;
+        left:30vw;
+        top:10%;
+        position: relative;
+    }
+
+    .testimonial-textes {
+        padding-left:30px !important;
+        padding-top:20px !important;
+    }
+
+    .testimonial-textes div:first-of-type p:first-of-type, .testimonial-textes div:nth-of-type(2) p:first-of-type {
+        padding-top: 15px !important;
+        line-height: 2;
+    }
+
+}
+
+.section-testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:30px;
+    padding-bottom: 170px;
+}
+
+.testimonials {
+    display:flex;
+    gap:80px;
+    justify-content: center;
+    margin-top:50px;
+    flex-wrap: wrap !important;
+}
+
+.testimonial-box1, .testimonial-box2 {
+    width:540px;
+    height:auto;
+}
+
+
+
+@media (min-width:768px) {
+    .testimonial-box1::after {
+        display:block;
+        content:"";
+        width:85px;
+        height:85px;
+        border: white 4px solid;
+        border-radius: 50%;
+        background-image: url('../images/avatar2.jpg');
+        background-size: cover;
+        margin-left: -46px;
+        margin-top:-127px;
+    }
+    
+    .testimonial-box2::after {
+        display:block;
+        content:"";
+        width:85px;
+        height:85px;
+        border: white 4px solid;
+        border-radius: 50%;
+        background-image: url('../images/avatar3.jpg');
+        background-size: cover;
+        margin-left: -46px;
+        margin-top:-127px;
+    }
+}
+
+.testimonial-textes {
+    padding-left:60px;
+    padding-right:30px;
+    padding-top:10px;
+    border:rgb(221, 221, 221) solid 1px;
+}
+
+.testimonial-textes div:first-of-type p:first-of-type {
+    font-family: "Noto Sans";
+    color:#181a1e;
+    font-weight: 300;
+    letter-spacing: 2;
+}
+
+.testimonial-textes div:nth-of-type(2) p:first-of-type {
+    font-family: "Baloo 2";
+    color:#695aa6;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+/* Section blog */
+
+@media (max-width:576px) {
+
+    .section-blog {
+        padding-bottom: 20px !important;
+    }
+
+    .blog-img img {
+        object-fit: cover; 
+        height:80vw;
+        width:80vw;
+    }
+
+    .blog-box {
+        flex-wrap: wrap !important;
+        width:80vw !important;
+    }
+
+    .blog-textes {
+        width:auto !important;
+        height:auto !important;
+        background-color: white;
+        padding-left: 20px !important; 
+        padding-bottom: 20px !important;
+        padding-right: 20px !important; 
+        padding-top: 10px !important;
+    }
+
+    .blog-extrait {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4; /* nb de lignes */
+        -webkit-box-orient: vertical; /* sens des lignes */
+ }
+
+    .blog-img {
+        margin-bottom:-20px;
+        padding:0;
+    }
+}
+
+.section-blog {
+    padding-top:30px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog-titres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog-box {
+    border:rgb(221, 221, 221) 1px solid;
+    display: flex;
+    width:76.2vw;
+    margin-top: 40px;
+    /* flex-wrap: wrap; */
+}
+
+.blog-img {
+    width:354px;
+    height:355px;
+}
+
+@media (min-width:768px) {
+    .blog-img img {
+        object-fit: cover; 
+        /* permet de faire contenir l'image dans la div sans la déformer */
+        height:355px;
+        width:355px;
+    }
+
+    .blog-textes {
+        padding: 30px;
+    }
+    
+    
+}
+
+.blog-textes a {
+    color:#695aa6;
+    font-family: "Noto Sans";
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+/* .blog-textes br {
+    display: block;
+    content: "";
+    font-size: 14px;
+    line-height: 4px;
+    height: 10px;
+} */
+
+.blog-extrait {
+    overflow: hidden;
+    /* max-height: 180px; */
+    margin-bottom:25px;
+    padding:0px;
+    /* margin-top:-10px; */
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6; /* nb de lignes */
+    -webkit-box-orient: vertical; /* sens des lignes */
+}
+
+.blog-extrait p {
+    font-family: "Noto Sans";
+    color:#181a1e;
+    font-weight: 300;
+    letter-spacing: 2;
+    font-size: 17px;
+}
+
+.blog-textes h5 {
+    font-size: 21px;
+    text-transform: none;
+}
+
+.blog-meta {
+    display: flex;
+    gap:18px;
+}
+
+.blog-meta p {
+    font-family: "Noto Sans";
+    color:#7f7f7f;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.blog-likes, .blog-coms {
+    display: flex;
+    gap:5px;
+    align-items: center;
+}
+
+.blog-likes i {
+    color:palevioletred;
+    font-size:15px;
+}
+
+.blog-coms i {
+    color:#7f7f7f;
+    font-size:15px;
+}
+
+/* Section contact */
+
+.section-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 120px;
+    padding-bottom: 50px;
+}
+
+.contact-form {
+    padding-top:50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:30px;
+}
+
+@media (max-width:576px) {
+
+    .message textarea {
+        width:80vw !important;
+        height: 150px;
+        border:rgb(195, 195, 195) 1px solid;
+        border-radius: 3px;
+    }
+    
+}
+
+@media (min-width:768) {
+    .message textarea {
+        width:47.3vw;
+        height: 150px;
+        border:rgb(195, 195, 195) 1px solid;
+        border-radius: 3px;
+    }
+}
+
+.message textarea {
+    width:47.3vw; 
+    height: 150px;
+    border:rgb(195, 195, 195) 1px solid;
+    border-radius: 3px;
+}
+
+.message textarea:focus {
+    border:rgb(195, 195, 195) 1px solid;
+    border-radius: 3px;
+    outline: none;
+}
+
+.message textarea[placeholder], .message textarea[placeholder]:focus, .message textarea[placeholder]:active {
+    outline: none;
+    font-family: "Noto Sans";
+    font-size: 17px;
+    color:#7f7f7f;
+    padding-left:10px;
+    padding-top: 4px;
+}
+
+.contact-btn button {
+    background-color: white;
+    border:#695aa6 2px solid;
+    border-radius: 4px;
+    font-family: "Noto Sans";
+    color:#695aa6;
+    font-size: 17px;
+    padding-top:8px;
+    padding-bottom:8px;
+    padding-left:12px;
+    padding-right:12px;
+    cursor:pointer;
+    transition: ease-in 0.1s;
+}
+
+.contact-btn button:hover {
+    background-color: #695aa6;
+    color:white;
+}
+
+/* copyright */
+
+@media (max-width:576px) {
+    .copyright {
+        padding-left:0 !important;
+    }
+
+    .socials {
+        padding-right:0 !important;
+    }
+
+    .footer-wrapper div {
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top:50px;
+    margin-bottom: 5px;
+}
+
+.footer-wrapper div {
+    width: 76.2vw;
+    border-top:1px solid rgb(221, 221, 221);
+}
+
+footer {
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    flex-wrap: wrap !important;
+}
+
+.copyright {
+    padding-left: 11.8vw;
+}
+
+.copyright p {
+    font-family: "Noto Sans";
+    font-size: 17px;
+    color:#7f7f7f;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap:5px;
+    padding-right: 11.8vw;
+}
+
+.socials i {
+    color:#6c757d;
+    font-size:16px;
+    border:3px solid #6c757d;
+    cursor:pointer;
+    transition: ease-in 0.1s;
+}
+
+.socials i:hover{
+    color:#695aa6;
+    border:3px solid #695aa6;
+}
+
+.fa-facebook-f {
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:13.5px;
+    padding-right:13.5px;
+    border-radius: 70%;
+}
+
+.fa-twitter {
+    padding-top:10.5px;
+    padding-bottom:9.5px;
+    padding-left:11.5px;
+    padding-right:9.5px;
+    border-radius: 70%;
+}
+
+.fa-google-plus-g {
+    padding-top:10.5px;
+    padding-bottom:9.5px;
+    padding-left:8.7px;
+    padding-right:8.7px;
+    border-radius: 70%;
+}
+
+.fa-pinterest {
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:10.8px;
+    padding-right:10.8px;
+    border-radius: 70%;
+}
+
+.fa-instagram, .fa-square-rss {
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:11px;
+    padding-right:11px;
+    border-radius: 70%;
+}
